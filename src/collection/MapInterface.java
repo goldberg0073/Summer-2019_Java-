@@ -18,6 +18,7 @@ public static void main(String[] args) {
 	scoreMap.put("zniti", 100);
 	System.out.println(scoreMap);
 	System.out.println(scoreMap.size());
+	System.out.println("Mosta7iiiiiiiiiiiiiiiiiil");
 	
 	
 	
