@@ -1,3 +1,4 @@
+import java.util.Scanner;
 
 public class Gazreceipt {
    public static void main (String [] args){
@@ -12,5 +13,16 @@ public class Gazreceipt {
    
 	
 	System.out.println("Fuel total :   $22.71");
+  
+	// index:        z
+
+	
+
+
+
+
+   
+   
+   
    }
 }

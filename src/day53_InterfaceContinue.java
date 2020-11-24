@@ -1,0 +1,6 @@
+
+public interface day53_InterfaceContinue {
+	
+	
+
+}
