@@ -34,6 +34,7 @@ public class Warmup1 {
 					}
 					
 				}
+		            System.out.println("The Unique Letters are : ");
 					System.out.println(Unique);
 					
 				
