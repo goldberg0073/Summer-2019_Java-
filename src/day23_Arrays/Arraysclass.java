@@ -59,6 +59,14 @@ public static void main(String[] args) {
    
    System.out.println("The Unique Letters"+Unique);
   System.out.println("%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%");
+
+
+  String str1="helloworld";
+  String []characters=str1.split("");
+	for (String each :characters
+		 ) {
+		System.out.println(each);
+	}
    
 }
 	

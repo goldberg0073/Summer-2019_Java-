@@ -1,38 +1,37 @@
 package InterviewQuestion;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
 
-public class ToBeDeleted {
 
-    int rollno;
-    String name;
-    static String college ="ITS";
 
-    ToBeDeleted(int r,String n){
-        rollno = r;
-        name = n;
+public class ToBeDeleted  {
+
+    public ToBeDeleted(){
+        System.out.println("Default constructor");
     }
-    void display (){System.out.println(rollno+" "+name+" "+college);}
+    public ToBeDeleted(String str){
+        this();
+        System.out.println("Constructor with String argument");
+    }
+    public ToBeDeleted(int num){
+        this("hicham");
+
+        System.out.println("Constructor with int argument");
+    }
+
+
+}
+class A extends ToBeDeleted{
+
+    public A(){
+        super(7);
+    }
 
     public static void main(String[] args) {
 
-        ToBeDeleted s1 = new  ToBeDeleted(111,"Karan");
-        ToBeDeleted s2 = new  ToBeDeleted(222,"Aryan");
 
-        s1.display();
-        s2.display();
-
-
-
-
-
-
-
-
+        A obg=new A();
 
 
     }
-
 }
+

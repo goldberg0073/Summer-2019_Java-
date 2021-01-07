@@ -36,8 +36,18 @@ public class Warmup1 {
 				}
 		            System.out.println("The Unique Letters are : ");
 					System.out.println(Unique);
-					
-				
+
+		System.out.println("###################################################");
+
+		boolean exp=10>9;
+		boolean result=Boolean.valueOf(exp);
+		System.out.println("result = " + result);
+
+		String string="12345";
+		Integer integer=Integer.parseInt(string);
+		System.out.println("integer = " + integer);
+
+
 		
 		
 	}

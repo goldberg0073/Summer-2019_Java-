@@ -1,34 +1,24 @@
 package collection;
 
 import java.io.FileInputStream;
-import java.io.InputStream;
-import java.util.Arrays;
-import java.util.Iterator;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Properties;
-import java.util.Set;
-import java.util.TreeSet;
-import java.util.Vector;
-
+import java.util.*;
 
 
 public class OfficeHoursCollection {
 
-	
+
 	
 	 public void textreader() {
-		
 
-		
-		
 	}
-		
-	
-	
+
+
 	public static void main(String[] args) {
 		
-		Properties text= new Properties();
+		int []arr={10,10,20,20,20,30,30,40,10,10,20,20};
+		NumberOfPairs(arr);
+
+	 	Properties text= new Properties();
 		String path="/Users/hichamahloufous/Desktop/hicham.properties";
 		
 		try {
@@ -74,5 +64,28 @@ public class OfficeHoursCollection {
 
 		
 	}
+	public static void NumberOfPairs(int[] numberOfSocks){
+
+		ArrayList<Integer>listOfSocks=new ArrayList<>();
+	 	for(int each:numberOfSocks){
+	 		listOfSocks.add(each);
+		}
+
+		LinkedHashSet<Integer> NoDup=new LinkedHashSet<>();
+
+		int pairs=0;
+		for (int i = 0; i < listOfSocks.size(); i++) {  //10,10,20,20,40,40,10,40,30
+			if (!NoDup.contains(listOfSocks.get(i))) {
+				NoDup.add(listOfSocks.get(i));
+			} else {
+				pairs++;
+				NoDup.remove(listOfSocks.get(i));
+			}
+		}
+
+		System.out.println("pairs = " + pairs);
+
+	}
+
 	
 }

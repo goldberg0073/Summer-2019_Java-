@@ -6,7 +6,8 @@ import java.util.Map;
 
 import javax.sound.midi.Soundbank;
 
-public class MapInterface {
+public class
+MapInterface {
 public static void main(String[] args) {
 	
 	Map<String, Integer>scoreMap=new LinkedHashMap<>();
